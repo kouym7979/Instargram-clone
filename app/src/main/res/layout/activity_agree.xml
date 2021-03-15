@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/agree_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20sp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="@string/agree_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/agree_detail"
+        android:text="@string/agree_detail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/agree_text"
+        android:gravity="center"
+        android:padding="10sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="10sp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/agree_all"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/agree_detail"
+        android:text="@string/agree_all"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="15sp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/all_check"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/agree_detail"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="5sp"
+        android:button="@drawable/round_check_box"/>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20sp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/all_check"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/agree_service"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10sp"
+        android:text="@string/agree_service"
+        app:layout_constraintTop_toBottomOf="@id/view3"
+        android:layout_marginTop="10sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/service_more"
+        android:text="@string/agree_more"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/agree_service"
+        android:layout_marginLeft="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/more"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/service_check"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view3"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="5sp"
+        android:button="@drawable/round_check_box"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/agree_data"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10sp"
+        android:text="@string/agree_data"
+        app:layout_constraintTop_toBottomOf="@id/service_more"
+        android:layout_marginTop="30sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/data_more"
+        android:text="@string/agree_more"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/agree_data"
+        android:layout_marginLeft="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/more"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/data_check"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/service_check"
+        android:layout_marginTop="40sp"
+        android:layout_marginRight="5sp"
+        android:button="@drawable/round_check_box"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/agree_location"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10sp"
+        android:text="@string/agree_location"
+        app:layout_constraintTop_toBottomOf="@id/data_more"
+        android:layout_marginTop="30sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_more"
+        android:text="@string/agree_more"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/agree_location"
+        android:layout_marginLeft="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/more"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_check"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/data_check"
+        android:layout_marginTop="40sp"
+        android:layout_marginRight="5sp"
+        android:button="@drawable/round_check_box"/>
+
+
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20sp"
+        android:background="@color/gray"
+        android:layout_marginBottom="10sp"
+        app:layout_constraintBottom_toTopOf="@id/agree_next"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.065"
+        android:id="@+id/agree_next"
+        android:layout_margin="10sp"
+        android:enabled="false"
+        android:textColor="@color/white"
+        android:background="@drawable/next_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/next"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ImageView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/user_search_img"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_serach_nick"
+        app:layout_constraintLeft_toRightOf="@+id/user_search_img"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="10sp"
+        android:textColor="@color/black"
+        android:hint="@string/user_nickname"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_search_name"
+        android:hint="@string/signup_name"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintLeft_toRightOf="@id/user_search_img"
+        app:layout_constraintTop_toBottomOf="@id/user_serach_nick"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

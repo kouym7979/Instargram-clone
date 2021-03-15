@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bottom_sheet_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="10sp"
+        android:background="@color/gray"
+        android:id="@+id/view1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.15"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:id="@+id/btn1"
+        android:padding="12sp"
+        android:layout_marginTop="10sp"
+        android:background="@android:color/transparent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        android:text="@string/post_other_app"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/btn3"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        android:text="@string/link"
+        android:textColor="@color/black"
+        android:padding="12sp"
+        android:background="@android:color/transparent"
+        android:textSize="14sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:padding="12sp"
+        android:background="@android:color/transparent"
+        android:id="@+id/btn4"
+        app:layout_constraintTop_toBottomOf="@id/btn3"
+        android:text="@string/share"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:padding="12sp"
+        android:background="@android:color/transparent"
+        android:id="@+id/btn5"
+        app:layout_constraintTop_toBottomOf="@id/btn4"
+        android:text="@string/save_feed"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:padding="12sp"
+        android:background="@android:color/transparent"
+        android:id="@+id/btn_del"
+        app:layout_constraintTop_toBottomOf="@id/btn5"
+        android:text="@string/delete"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12sp"
+        android:background="@android:color/transparent"
+        android:gravity="left"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/btn_update"
+        app:layout_constraintTop_toBottomOf="@id/btn_del"
+        android:text="@string/update"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:padding="12sp"
+        android:background="@android:color/transparent"
+        android:id="@+id/btn8"
+        app:layout_constraintTop_toBottomOf="@id/btn_update"
+        android:text="@string/function_comment"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

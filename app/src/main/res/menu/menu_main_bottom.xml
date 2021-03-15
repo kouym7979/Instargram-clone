@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_main_btm_nav_home"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/home_btn"
+        android:iconTint="@color/black"
+        android:title="@string/bottom_nav_home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_main_btm_nav_search"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/search_btn"
+        android:iconTint="@color/black"
+        android:title="@string/bottom_nav_search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_main_btm_nav_movie"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/video_no"
+        android:iconTint="@color/black"
+        android:title="@string/bottom_nav_movie"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_main_btm_nav_shop"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/shop_btn"
+        android:iconTint="@color/black"
+        android:title="@string/bottom_nav_shop"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_main_btm_nav_profile"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/liam"
+        android:title="@string/bottom_nav_profile"
+        app:showAsAction="always" />
+
+
+</menu>
